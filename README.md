@@ -29,23 +29,22 @@
     <a href="#install">Установка</a>
   </li>
   <li>
-    <details>
-      <summary><a href="#doc">Документация</a></summary>
-      <ul>
-        <li>
-          <a href="#doc-classes">Classes</a>
-        </li>
-        <li>
-          <a href="#doc-settings">Settings</a>
-        </li>
-        <li>
-          <a href="#doc-methods">Methods</a>
-          <div style="display:flex; direction: column; gap: 2px;">
-            <a href="#methods-1">Methods1</a>
-            <a href="#methods-1">Methods1</a>
-            <a href="#methods-1">Methods1</a>
-            <a href="#methods-1">Methods1</a>
-          </div>
+    <a href="#doc">Документация</a>
+    <ul>
+      <li>
+        <a href="#doc-classes">Classes</a>
+      </li>
+      <li>
+        <a href="#doc-settings">Settings</a>
+      </li>        
+      <li>
+        <a href="#doc-methods">Methods</a>
+        <ul>
+          <a href="#methods-1">Methods1</a>
+          <a href="#methods-2">Methods2</a>
+          <a href="#methods-3">Methods3</a>
+          <a href="#methods-4">Methods4</a>
+        </ul>
         </li>
       </ul>
     </details>
