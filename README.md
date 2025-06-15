@@ -4,14 +4,19 @@
 [![Foo](https://img.shields.io/badge/%E2%82%BD%24%E2%82%AC%20%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C-%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B0-orange.svg?style=flat-square)](https://alexgyver.ru/support_alex/)
 [![Foo](https://img.shields.io/badge/README-ENGLISH-blueviolet.svg?style=flat-square)](https://github-com.translate.goog/GyverLibs/EncButton?_x_tr_sl=ru&_x_tr_tl=en)  
 
-[![Foo](https://img.shields.io/badge/ПОДПИСАТЬСЯ-НА%20ОБНОВЛЕНИЯ-brightgreen.svg?style=social&logo=telegram&color=blue)](https://t.me/GyverLibs)
+[![Foo](https://img.shields.io/badge/ПОДПИСАТЬСЯ-НА-ОБНОВЛЕНИЯ-brightgreen.svg?style=social&logo=telegram&color=blue)](https://t.me/GyverLibs)
 
-# EncButton
+<a id="start-doc"></a>
+<h1 align="center" style="display: block; font-size: 2.5em; font-weight: bold; margin-block-start: 1em; margin-block-end: 1em;">
+  <strong>EncButton 3</strong>
+</h1>
+*Асинхронная библиотека для управления кнопкой и энкодером с Arduino*
 
-| ⚠️⚠️⚠️<br>**Новая версия v3 несовместима с предыдущими, смотри [документацию](#docs), [примеры](#example) и краткий [гайд по миграции](#migrate) с v2 на v3!**<br>⚠️⚠️⚠️ |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+---
 
-Асинхронная библиотека для управления кнопкой и энкодером с Arduino
+> [!Внимание]
+> Новая версия v3 несовместима с предыдущими, смотри [документацию](#docs), [примеры](#example) и краткий [гайд по миграции](#migrate) с v2 на v3!
+
 ### Возможности
 - Кнопка
   - Обработка событий: нажатие, отпускание, клик, количество кликов, удержание кнопки, импульсное удержание и время удержания. Также можно настроить предварительные клики для всех режимов.
@@ -60,7 +65,7 @@
 <details>
 <summary><h2 id="install">Установка</р></summary>
 
-- Для работы требуется библиотека [GyverIO](https://github.com/GyverLibs/GyverIO)
+Для работы требуется библиотека [GyverIO](https://github.com/GyverLibs/GyverIO)
 - Установите __EncButton__ через менеджер библиотек Arduino IDE, Arduino IDE v2 или PlatformIO.
 - Для ручной установки: [Скачать библиотеку](https://github.com/GyverLibs/EncButton/archive/refs/heads/main.zip) и распаковать в:
   1. `Windows x64: C:\Program Files (x86)\Arduino\libraries`
@@ -71,7 +76,7 @@ Arduino IDE[^1].
 
 Читай более подробную инструкцию по установке библиотек [здесь](https://alexgyver.ru/arduino-first/#%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA)
 
-Обновление
+### Обновление
 - _Через менеджер библиотек:_ найдите и нажмите "Обновить".
 - _Вручную:_ удалите старую версию и замените новой, избегая замены файлов.
 </details>
