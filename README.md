@@ -21,37 +21,20 @@
 <a id="start-doc"></a>
 
 # Содержание
-<ol>
-  <li>
-    <a href="#about">О программе</a>
-  </li>
-  <li>
-    <a href="#install">Установка</a>
-  </li>
-  <li>
-    <a href="#doc">Документация</a>
-    <ul>
-      <li>
-        <a href="#doc-classes">Classes</a>
-      </li>
-      <li>
-        <a href="#doc-settings">Settings</a>
-      </li>        
-      <li>
-        <a href="#doc-methods">Methods</a>
-        <ul>
-          <li><a href="#methods-1">Methods1</a></li>
-          <li><a href="#methods-1">Methods1</a></li>
-          <li><a href="#methods-1">Methods1</a></li>
-          <li><a href="#methods-1">Methods1</a></li>
-        </ul>
-        </li>
-      </ul>
-    </details>
-  </li>   
-</ol>
 
-# 1. О программе(#about)
+- [О программе](#about)
+- [Установка](#install)
+- [Документация](#doc)
+  - [Classes](#classes)
+  - [settings](#settings)
+  - [Methods](#methods)
+    - [Concept](#conteps)
+    - [Method1](#method-1)
+    - [Method2](#method-2)
+- [Использование](#using)
+- [Техническая документация и сборка](#tech-info)
+
+# [1. О программе](#about)
 
 ## Возможности
 #### Кнопка
@@ -73,14 +56,14 @@
 Совместима со всеми Arduino платформами (используются Arduino-функции)
 <p align="right"><a href="#start-doc">К содержанию</a></p>
 
-# 2. Установка(#install)
+# [2. Установка](#install)
 
-> [!NOTE]
+> [!TIP]
 > Для работы требуется библиотека [GyverIO](https://github.com/GyverLibs/GyverIO)
 
-## Автоматическая установка
+### Автоматическая установка
 - Установите __EncButton__ через менеджер библиотек Arduino IDE, Arduino IDE v2 или PlatformIO.
-## Ручная установка
+### Ручная установка
 - Для ручной установки: [Скачать библиотеку](https://github.com/GyverLibs/EncButton/archive/refs/heads/main.zip) и распаковать в:  
   - Windows x64: C:\Program Files (x86)\Arduino\libraries
   - Windows x32: C:\Program Files\Arduino\libraries
@@ -90,8 +73,14 @@
 > Подробная инструкция по установке библиотек доступна [по этой ссылке](https://alexgyver.ru/arduino-first/#%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA).
 
 ### Обновление
-- _Через менеджер библиотек:_ найдите и нажмите "Обновить".
+- _Менеджер библиотек:_ найдите и нажмите "Обновить".
 - _Вручную:_ удалите старую версию и замените новой, избегая замены файлов.
 
 <p align="right"><a href="#start-doc">К содержанию</a></p>
+
+# [3. Документация](#doc)
+
+<p align="right"><a href="#start-doc">К документации</a></p>
+<p align="right"><a href="#start-doc">К содержанию</a></p>
+
 
