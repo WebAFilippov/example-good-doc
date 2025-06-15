@@ -40,10 +40,10 @@
       <li>
         <a href="#doc-methods">Methods</a>
         <ul>
-          <a href="#methods-1">Methods1</a>
-          <a href="#methods-2">Methods2</a>
-          <a href="#methods-3">Methods3</a>
-          <a href="#methods-4">Methods4</a>
+          <li><a href="#methods-1">Methods1</a></li>
+          <li><a href="#methods-1">Methods1</a></li>
+          <li><a href="#methods-1">Methods1</a></li>
+          <li><a href="#methods-1">Methods1</a></li>
         </ul>
         </li>
       </ul>
