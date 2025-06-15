@@ -82,9 +82,7 @@
 <summary><h1 id="install">2. Установка</р></summary>
 
 <div style="background: #fff3bf; padding: 12px; border-left: 4px solid #ffd43b; border-radius: 4px; margin: 1em 0;">
-  <ul>
-    <li>__Для работы требуется библиотека [GyverIO](https://github.com/GyverLibs/GyverIO)__</li>
-  </ul>
+  __Для работы требуется библиотека [GyverIO](https://github.com/GyverLibs/GyverIO)__
 </div>
 
 ## Автоматическая установка
