@@ -18,23 +18,21 @@
 > __Новая версия несовместима с предыдущими, смотри [документацию](#docs), [примеры](#example) и краткий [гайд по миграции](#migrate) с v2 на v3!__
 
 
-<a id="start-doc"></a>
-
-# Содержание
+# Содержание(#contents)
 
 - [О программе](#about)
 - [Установка](#install)
 - [Документация](#doc)
-  - [Classes](#classes)
-  - [settings](#settings)
-  - [Methods](#methods)
+  - [Концепция](#concept)
+  - [Настройка](#settings)
+  - [Методы](#methods)
     - [Concept](#conteps)
     - [Method1](#method-1)
     - [Method2](#method-2)
 - [Использование](#using)
 - [Техническая документация и сборка](#tech-info)
 
-# [1. О программе](#about)
+# 1. [О программе](#about)
 
 ## Возможности
 #### Кнопка
@@ -45,6 +43,7 @@
   - Обработка событий: обычный поворот, нажатый поворот, быстрый поворот.
   - Поддержка четырёх типов инкрементальных энкодеров.
   - Высокоточный алгоритм определения положения.
+  -----
   - Буферизация в прерывании (временная задержка для обработки данных).
 
 ## Особенности
@@ -54,9 +53,9 @@
 
 ## Совместимость
 Совместима со всеми Arduino платформами (используются Arduino-функции)
-<p align="right"><a href="#start-doc">К содержанию</a></p>
+<p align="right"><a href="#contents">К содержанию</a></p>
 
-# [2. Установка](#install)
+# 2. [Установка](#install)
 
 > [!TIP]
 > Для работы требуется библиотека [GyverIO](https://github.com/GyverLibs/GyverIO)
@@ -76,11 +75,81 @@
 - _Менеджер библиотек:_ найдите и нажмите "Обновить".
 - _Вручную:_ удалите старую версию и замените новой, избегая замены файлов.
 
-<p align="right"><a href="#start-doc">К содержанию</a></p>
+<p align="right"><a href="#contents">К содержанию</a></p>
 
-# [3. Документация](#doc)
+# 3. [Документация](#doc)
 
-<p align="right"><a href="#start-doc">К документации</a></p>
-<p align="right"><a href="#start-doc">К содержанию</a></p>
+<details>
+  <summary><a href="concept"><h2>Концепция</h2></a></summary>
+  Описание классов
+
+  <p align="right"><a href="#doc">К документации</a></p>
+  <p align="right"><a href="#contents">К содержанию</a></p>
+</details>
+
+<details>
+  <summary><a href="settings"><h2>Настройка</h2></a></summary>
+  Объявлять до подключения библиотеки
+
+  ```cpp
+  // отключить поддержку pressFor/holdFor/stepFor и счётчик степов (экономит 2 байта оперативки)
+  #define EB_NO_FOR
+
+  // отключить обработчик событий attach (экономит 2 байта оперативки)
+  #define EB_NO_CALLBACK
+
+  // отключить счётчик энкодера [VirtEncoder, Encoder, EncButton] (экономит 4 байта оперативки)
+  #define EB_NO_COUNTER
+
+  // отключить буферизацию энкодера (экономит 2 байта оперативки)
+  #define EB_NO_BUFFER
+
+  /*
+    Настройка таймаутов для всех классов
+    - Заменяет таймауты константами, изменить их из программы (SetXxxTimeout()) будет нельзя
+    - Настройка влияет на все объявленные в программе кнопки/энкодеры
+    - Экономит 1 байт оперативки на объект за каждый таймаут
+    - Показаны значения по умолчанию в мс
+    - Значения не ограничены 4000мс, как при установке из программы (SetXxxTimeout())
+  */
+  #define EB_DEB_TIME 50      // таймаут гашения дребезга кнопки (кнопка)
+  #define EB_CLICK_TIME 500   // таймаут ожидания кликов (кнопка)
+  #define EB_HOLD_TIME 600    // таймаут удержания (кнопка)
+  #define EB_STEP_TIME 200    // таймаут импульсного удержания (кнопка)
+  #define EB_FAST_TIME 30     // таймаут быстрого поворота (энкодер)
+  #define EB_TOUT_TIME 1000   // таймаут действия (кнопка и энкодер)
+  ```
+
+  <p align="right"><a href="#doc">К документации</a></p>
+  <p align="right"><a href="#contents">К содержанию</a></p>
+</details>
+
+<details>
+  <summary><a href="methods"><h2>Методы</h2></a></summary>
+
+  - [tick](#method-tick)
+  - [setHoldTimeout](#method-setHoldTimeout)
+  - setStepTimeout
+  - setDebTimeout
+  - setBtnLevel
+  - setClickTimeout
+  - tick
+  - tickRaw
+  - read
+  - readBtn
+
+  ### [tick()](#method-tick)
+
+  __Описание:__ Основной метод для опроса состояния кнопки или энкодера. Должен вызываться в цикле loop() для обработки событий (нажатий, вращений и т.д.). Для виртуальных классов принимает входные значения напрямую.
+
+  ### [setHoldTimeout()](#method-setHoldTimeout)
+
+  <p align="right"><a href="#doc">К документации</a></p>
+  <p align="right"><a href="#contents">К содержанию</a></p>
+</details>
+
+
+
+
 
 
