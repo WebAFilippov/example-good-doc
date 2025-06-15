@@ -58,6 +58,20 @@
 - [Баги и обратная связь](#feedback)
 
 <details>
-<summary>## Установка</summary>
-Текст внутри спойлера.
+<summary><h2 id="install">Установка</р></summary>
+
+- Для работы требуется библиотека [GyverIO](https://github.com/GyverLibs/GyverIO)
+- Установите __EncButton__ через менеджер библиотек Arduino IDE, Arduino IDE v2 или PlatformIO.
+- Для ручной установки: [Скачать библиотеку](https://github.com/GyverLibs/EncButton/archive/refs/heads/main.zip) и распаковать в:
+  1. `Windows x64: C:\Program Files (x86)\Arduino\libraries`
+  2. _Windows x32: C:\Program Files\Arduino\libraries_
+  3. _Документы/Arduino/libraries/_
+Arduino IDE[^1].
+[^1]: Автоматическая установка  из .zip: _Скетч/Подключить библиотеку/Добавить_ .ZIP библиотеку и указать скачанный архив
+
+Читай более подробную инструкцию по установке библиотек [здесь](https://alexgyver.ru/arduino-first/#%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA)
+
+Обновление
+- _Через менеджер библиотек:_ найдите и нажмите "Обновить".
+- _Вручную:_ удалите старую версию и замените новой, избегая замены файлов.
 </details>
