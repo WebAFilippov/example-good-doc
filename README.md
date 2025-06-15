@@ -81,7 +81,7 @@
 <details>
 <summary><h1 id="install">2. Установка</р></summary>
 
-> [!INFO]
+> [!NOTE]
 > __Для работы требуется библиотека [GyverIO](https://github.com/GyverLibs/GyverIO)__
 
 ## Автоматическая установка
@@ -90,9 +90,11 @@
 
 ## Обновление
 - Для ручной установки: [Скачать библиотеку](https://github.com/GyverLibs/EncButton/archive/refs/heads/main.zip) и распаковать в:
-  - `Windows x64: C:\Program Files (x86)\Arduino\libraries`
-  - _Windows x32: C:\Program Files\Arduino\libraries_
-  - _Документы/Arduino/libraries/_
+  - ```bash
+    Windows x64: C:\Program Files (x86)\Arduino\libraries
+    ```
+  - Windows x32: C:\Program Files\Arduino\libraries
+  - Документы/Arduino/libraries/
   - (Arduino IDE) автоматическая установка из .zip: Скетч/Подключить библиотеку/Добавить .ZIP библиотеку… и указать скачанный архив
 
 > **Примечание:** Подробная инструкция по установке библиотек доступна [по этой ссылке](https://alexgyver.ru/arduino-first/#%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA).
