@@ -6,7 +6,7 @@
 
 [![Foo](https://img.shields.io/badge/ПОДПИСАТЬСЯ-НА%20ОБНОВЛЕНИЯ-brightgreen.svg?style=social&logo=telegram&color=blue)](https://t.me/GyverLibs)
 
-<a id="start-doc"></a>
+
 <h1 align="center" style="font-size: 2.5em; font-weight: bold; margin: 1em 0;">
   EncButton 3
 </h1>
@@ -15,12 +15,43 @@
 ---
 
 > [!IMPORTANT]
-> Новая версия v3 несовместима с предыдущими, смотри [документацию](#docs), [примеры](#example) и краткий [гайд по миграции](#migrate) с v2 на v3!
+> __Новая версия несовместима с предыдущими, смотри [документацию](#docs), [примеры](#example) и краткий [гайд по миграции](#migrate) с v2 на v3!__
 
 
+<a id="start-doc"></a>
 
 ## Содержание
-- [О программе](#about) 
+<ol>
+  <li>
+    <a href="#about">О программе</a>
+  </li>
+  <li>
+    <a href="#install">Установка</a>
+  </li>
+  <li>
+    <details>
+      <summary><a href="#doc">Документация</a></summary>
+      <ul>
+        <li>
+          <a href="#doc-classes">Classes</a>
+        </li>
+        <li>
+          <a href="#doc-settings">Settings</a>
+        </li>
+        <li>
+          <a href="#doc-methods">Methods</a>
+          <div style="display:flex; direction: column; gap: 2px;">
+            <a href="#methods-1">Methods1</a>
+            <a href="#methods-1">Methods1</a>
+            <a href="#methods-1">Methods1</a>
+            <a href="#methods-1">Methods1</a>
+          </div>
+        </li>
+      </ul>
+    </details>
+  </li>   
+</ol>
+<!-- - [О программе](#about) 
 - [Установка](#install)
 - [Документация](#docs)
   - [Classes]
@@ -31,8 +62,7 @@
     - [Method1]
     - [Method1]
     - [Method1]
-    - [Method1]
- 
+    - [Method1] 
 - [Использование](#using)
   - [Настройки компиляции](#config)
   - [Полное описание классов](#class)
@@ -51,22 +81,21 @@
   - [Кастомные функции](#custom)
   - [Опрос по таймеру](#timer)
   - [Мини примеры, сценарии](#examples-mini)
-
 - [Примеры](#example)
-
 - [Техническая документация и подключение](#info)
 - [Миграция с v2](#migrate)
 - [Версии](#versions)
-- [Баги и обратная связь](#feedback)
+- [Баги и обратная связь](#feedback) -->
 
 ## О программе
 
 ### Возможности
-<span align="center">Button</span>
+Кнопка
   - Обработка событий: нажатие, отпускание, клик, количество кликов, удержание кнопки, импульсное удержание и время удержания. Также можно настроить предварительные клики для всех режимов.
   - Программное подавление дребезга (нежелательных повторных нажатий).
   - Возможность обрабатывать две одновременно нажатые кнопки как одну.
-<span align="center">Encoder</span>
+
+Енкодер
   - Обработка событий: обычный поворот, нажатый поворот, быстрый поворот.
   - Поддержка четырёх типов инкрементальных энкодеров.
   - Высокоточный алгоритм определения положения.
@@ -97,4 +126,6 @@ Arduino IDE[^1].
 ### Обновление
 - _Через менеджер библиотек:_ найдите и нажмите "Обновить".
 - _Вручную:_ удалите старую версию и замените новой, избегая замены файлов.
+
+<p align="right"><a href="#start-doc">К содержанию</a></p>
 </details>
